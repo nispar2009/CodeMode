@@ -33,11 +33,13 @@ delFile = (file) => {
 update = () => {
     localStorage.setItem(`${(getInput("filename"))}.html`, (getInput("code")))
     loadFiles()
+    toggleSidebar()
 }
 
 run = () => {
-    setValue("page", (getInput("code")))
-    document.getElementById("page").style.display = "block"
+    file = prompt("Which file would you like to run?")
+    code = localStorage.getItem(file)
+    document.querySelector("*").innerHTML = code
 }
 
 esc = () => {

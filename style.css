@@ -50,13 +50,14 @@ body {
     box-sizing: border-box;
 }
 
-button.btn {
+.btn {
     font-weight: bold;
+    border-radius: 10px;
 }
 
-button.btn.btn-info {
+.btn.btn-info {
     margin-left: 1%;
-    width: 44.5%;
+    width: 90%;
     font-size: xx-large;
     border-radius: 10px;
 }
@@ -87,17 +88,13 @@ h2.heading {
     color: white !important;
 }
 
-#page {
-    background-color: white;
-    z-index: 10000000;
-    display: none;
-    height: 100%;
+#files tr td .btn {
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    color: black;
-    overflow: auto;
+}
+
+#files tr td,
+#files tr th {
+    border: 1px solid grey;
 }
 
 #mobile {

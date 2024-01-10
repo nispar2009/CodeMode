@@ -18,7 +18,6 @@
 
 <body onload="loadFiles()" onkeydown="esc()">
     <div id="desktop">
-        <div id="page"></div>
         <div id="sidebar">
             <table class="table" id="files"></table>
         </div>
@@ -26,6 +25,7 @@
             <div class="nav nav-desktop">
                 <a href="#" id="hamburger" class="nav-desktop-item nav-desktop-link"
                     onclick="toggleSidebar()">&#9776;</a>
+                <a href="run.html" target="_blank" class="nav-desktop-item nav-desktop-link">Run code</a>
                 <a href="https://nispar2009.github.io" class="nav-desktop-item nav-desktop-link">About us</a>
                 <a href="https://nispar2009.github.io/spectrum_stylr/docsHome.html"
                     class="nav-desktop-item nav-desktop-link">Using CSS and JS libraries</a>
@@ -34,13 +34,14 @@
 
         <h2 class="heading">Create, save, and view static pages on the fly in your very own browser code editor.</h2>
         <input type="text" id="filename" class="form"><input type="text" class="form" id="html" value=".html" readonly>
+        <br>
         <textarea class="form" id="code" spellcheck="false"></textarea>
         <br>
-        <button class="btn btn-info" onclick="update()">Submit</button><button class="btn btn-info"
-            onclick="run()">Run</button>
+        <button class="btn btn-info" onclick="update()">>_</button>
     </div>
     <div id="mobile">
-        <h3>CodeMode is not available on mobile devices.</h3><h2>Please continue on a desktop.</h2>
+        <h3>CodeMode is not available on mobile devices.</h3>
+        <h2>Please continue on a desktop.</h2>
     </div>
 </body>
 
