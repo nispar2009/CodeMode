@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMode &middot; HTML paradise!</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://nispar2009.github.io/spectrum-stylr-beta/dark.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Source+Code+Pro:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://nispar2009.github.io/spectrum_stylr/Spectrum.js"></script>
+</head>
+
+<body onload="loadFiles()" onkeydown="esc()">
+    <div id="desktop">
+        <div id="page"></div>
+        <div id="sidebar">
+            <table class="table" id="files"></table>
+        </div>
+        <header>
+            <div class="nav nav-desktop">
+                <a href="#" id="hamburger" class="nav-desktop-item nav-desktop-link"
+                    onclick="toggleSidebar()">&#9776;</a>
+                <a href="https://nispar2009.github.io" class="nav-desktop-item nav-desktop-link">About us</a>
+                <a href="https://nispar2009.github.io/spectrum_stylr/docsHome.html"
+                    class="nav-desktop-item nav-desktop-link">Using CSS and JS libraries</a>
+            </div>
+        </header>
+
+        <h2 class="heading">Create, save, and view static pages on the fly in your very own browser code editor.</h2>
+        <input type="text" id="filename" class="form"><input type="text" class="form" id="html" value=".html" readonly>
+        <textarea class="form" id="code" spellcheck="false"></textarea>
+        <br>
+        <button class="btn btn-info" onclick="update()">Submit</button><button class="btn btn-info"
+            onclick="run()">Run</button>
+    </div>
+    <div id="mobile">
+        <h3>CodeMode is not available on mobile devices.</h3><h2>Please continue on a desktop.</h2>
+    </div>
+</body>
+
+</html>

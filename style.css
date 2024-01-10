@@ -1,0 +1,116 @@
+* {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.desktop {
+    height: 100%;
+    width: 100%;
+}
+
+#hamburger {
+    z-index: 1000;
+}
+
+.nav-desktop {
+    z-index: -1;
+}
+
+.nav-desktop-link {
+    font-size: large;
+}
+
+.form {
+    color: white;
+}
+
+#filename {
+    width: 74%;
+    border-radius: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 15px;
+}
+
+#html {
+    width: 15%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#code {
+    margin: 15px;
+    width: 90%;
+    height: 50vh !important;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+button.btn {
+    font-weight: bold;
+}
+
+button.btn.btn-info {
+    margin-left: 1%;
+    width: 44.5%;
+    font-size: xx-large;
+    border-radius: 10px;
+}
+
+h2.heading {
+    margin-left: 1%;
+}
+
+#sidebar {
+    height: 100%;
+    width: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    background-color: black;
+    transition-duration: 0.5s;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 100px;
+}
+
+#files {
+    margin-left: 1%;
+    width: 98%;
+}
+
+#files tr th {
+    color: white !important;
+}
+
+#page {
+    background-color: white;
+    z-index: 10000000;
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: black;
+    overflow: auto;
+}
+
+#mobile {
+    text-align: center;
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+}
